@@ -4,7 +4,10 @@ var sec = 0
 
 var tempo = 1000
 var cron;
+
 function start() {
+    pause();
+    stopTimer()
     cron = setInterval(() => { timer() }, tempo)
    
 }
