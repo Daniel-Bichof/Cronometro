@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronometro</title>
+    <link rel="icon" href="./img/calendar.svg">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="app.js"></script>
+    <script src="crono.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="horario"></div>
+    </div>
+    <div class="crono">
+        <button onclick="start()" class="bg-green">Start</button>
+        <button onclick="pause()" class="bg-yellow">Pause</button>
+        <button onclick="stopTimer()" class="bg-red">Stop</button>
+        <h2 id="counter">00:00:00</h2>
+    </div>
+    <footer>&copy; Daniel Bichof</footer>
+  </body>
+</html>
