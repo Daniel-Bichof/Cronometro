@@ -1,13 +1,24 @@
+var voltas = []
+
 var h = 0
 var min  = 0
 var sec = 0
+var mSec = 0
 
-var tempo = 1000
+var tempo = 10
 var cron;
+
+function TimeMarker(){
+    var time = document.querySelector('#counter').innerHTML
+    var split = document.querySelector('.time-marker')
+    voltas.push(time)
+    console.log(voltas)
+    console.log(time)
+    split.innerHTML += `${time} <br/>`
+}
 
 function start() {
     pause();
-    stopTimer()
     cron = setInterval(() => { timer() }, tempo)
    
 }
@@ -21,22 +32,29 @@ function stopTimer() {
     h = 0
     min = 0
     sec = 0
+    mSec = 0
+    var ListTime = document.querySelector('.time-marker')
+    ListTime.innerHTML = ''
 
-    document.getElementById('counter').innerHTML = '00:00:00'
+    document.getElementById('counter').innerHTML = '00:00:00:00'
 }
 function timer() {
 
-
-    sec++
-    if(sec == 60){
-        sec = 0 
-        min++
-        if (min == 60) {
-            min = 0
-            h++
+    mSec++
+    if(mSec == 100) {
+        mSec = 0
+        sec++
+        if(sec == 60) {
+            sec = 0 
+            min++
+            if (min == 60) {
+                min = 0
+                h++
+            }
         }
     }
+    
 
-    var format = (h > 10 ? '0' + h : h) + ':' + (min < 10 ? '0' + min : min) + ':' + (sec < 10 ? '0'+ sec: sec)
+    var format = (h > 10 ? '0' + h : h) + ':' + (min < 10 ? '0' + min : min) + ':' + (sec < 10 ? '0'+ sec: sec) + ':' + (mSec < 10 ? '0'+ mSec : mSec)
     document.getElementById('counter').innerHTML = format
 }
