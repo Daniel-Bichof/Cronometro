@@ -8,7 +8,7 @@
 body{
     /* background-image: url("./images/background.jpg"); */
     font-size: 1.4em;
-    background: linear-gradient(329.54deg, #18469b 0%, #0adbdb 100%) no-repeat;
+    background: #18469b;
     height: 100vh;
     color: white;
 
@@ -57,7 +57,7 @@ button {
     outline: none;
     font-family: 'Segoe UI';
     font-size: 1.1em;
-    transition: all .5s;
+    transition: all .4s;
     cursor: pointer;
     border-radius: 25px;
 }
@@ -80,3 +80,8 @@ button:active {
 .bg-red {
     background-color: #ce7a7a;
 }
+
+.bg-orange {
+    background-color: #ce7808
+}
+
