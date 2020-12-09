@@ -7,7 +7,7 @@
 
 body{
     /* background-image: url("./images/background.jpg"); */
-    font-size: 1.4em;
+    font-size: clamp(1.2em, 1.3em, 2em);
     background: #18469b;
     height: 100vh;
     color: white;
@@ -15,21 +15,17 @@ body{
 }
 
 .container {
-    display: flex;
-    align-items: center;
-
+    text-align: center;
 
 }
 
 footer {
     font: normal 14pt arial;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    
     text-align: center;
     color: #d5e3e7;
-    position: absolute; 
-    left: 1rem;
-    right: 1em;
-    bottom: 2rem;
+
      
 }
 
