@@ -4,32 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cronometro</title>
+  <meta name="description" content="simple and minimalist pomodoro clock "/>
+  <meta name="author" content="Daniel">
+  <title>Pomodoro timer</title>
   <link rel="icon" href="./img/calendar.png" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
   <script type="text/javascript" src="app.js"></script>
   <script src="crono.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <h3>Your Hours</h3>
-    <div class="horario"></div>
+    <h1>Pomodoro timer</h1>
   </div>
   <div class="crono">
     <button onclick="start()" class="bg-green">Start</button>
     <button onclick="pause()" class="bg-yellow">Pause</button>
-    <button onclick="stopTimer()" class="bg-red">Stop</button>
-    <button onclick="TimeMarker()" class="bg-orange">spliter</button>
+    <button onclick="stopTimer()" class="bg-red">Reset</button>
+    
     <h2 id="counter">00:00:00:00</h2>
+    
   </div>
+  <div class="horario"></div>
 
-  <div id="split" class="crono">
-    <h3 class="time-marker">
-
-      </h3>
-  </div>
-  <footer>&copy; Daniel Bichof</footer>
+  
 </body>
 
 </html>
