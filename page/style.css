@@ -8,26 +8,28 @@
 body{
     /* background-image: url("./images/background.jpg"); */
     font-size: clamp(1.2em, 1.3em, 2em);
-    background: #18469b;
+    font-family: 'Inter', Consolas, sans-serif;
+    background: #0d1117;
     height: 100vh;
     color: white;
 
 }
 
-.container {
-    text-align: center;
 
+h1{
+    font-family: 'Inter', sans-serif;
 }
 
-footer {
-    font: normal 14pt arial;
-    margin-top: 2rem;
-    
-    text-align: center;
-    color: #d5e3e7;
-
-     
+h2 {
+    font-family: 'Mukta', 'Inter', sans-serif;
+    margin-top: 20px;
 }
+
+
+.container, body {
+    text-align: center;
+}
+
 
 .crono{
     max-width: 60%;
@@ -42,22 +44,18 @@ footer {
     color: #17171d;
 }
 
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 20px;
-}
-
 button {
     padding: 10px;
     margin: 5px;
     border: none;
     outline: none;
-    font-family: 'Segoe UI';
+    font-family: 'Inter', 'Mukta', sans-serif;
     font-size: 1.1em;
     transition: all .4s;
     cursor: pointer;
     border-radius: 25px;
 }
+
 button:hover {
     background-color: #a1c0d1;
 }
@@ -82,3 +80,13 @@ button:active {
     background-color: #ce7808
 }
 
+footer {
+    font: normal 14pt arial;
+    margin-top: 2rem;    
+    text-align: center;
+    color: #d5e3e7;
+}
+
+.horario {
+    margin: 2em;
+}
